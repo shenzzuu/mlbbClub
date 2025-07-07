@@ -68,14 +68,14 @@
         <div class="logo">
         <img src="pictures/logo.png" alt="MLBB Logo">
         </div>
-        <nav class="nav-links">
-        <a href="index.php">Home</a>
-        <a href="#">About</a>
-        <a href="#">Members</a>
-        <a href="#">E-Sport</a>
-        <a href="#">Subscription</a>
-        <a href="#">Merchandises</a>
-        </nav>
+    <nav class="nav-links">
+      <a href="index.php"        class="<?= basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : '' ?>">Home</a>
+      <a href="about.php"        class="<?= basename($_SERVER['PHP_SELF']) == 'about.php' ? 'active' : '' ?>">About</a>
+      <a href="members.php"      class="<?= basename($_SERVER['PHP_SELF']) == 'members.php' ? 'active' : '' ?>">Members</a>
+      <a href="esports.php"      class="<?= basename($_SERVER['PHP_SELF']) == 'esports.php' ? 'active' : '' ?>">E-Sport</a>
+      <a href="subscription.php" class="<?= basename($_SERVER['PHP_SELF']) == 'subscription.php' ? 'active' : '' ?>">Subscription</a>
+      <a href="merchandise.php"  class="<?= basename($_SERVER['PHP_SELF']) == 'merchandise.php' ? 'active' : '' ?>">Merchandises</a>
+    </nav>
     </div>
     <div class="nav-right">
         <input type="text" placeholder="Search..." />
