@@ -36,8 +36,8 @@ try {
             'quantity' => 1,
         ]],
         'mode'         => 'payment',
-        'success_url' => "https://your-app-name.onrender.com/success.php?session_id={CHECKOUT_SESSION_ID}",
-        'cancel_url'  => "https://your-app-name.onrender.com/subscription.php?cancel=1",
+        'success_url' => "https://mlbbclub.onrender.com/success.php?session_id={CHECKOUT_SESSION_ID}",
+        'cancel_url'  => "https://mlbbclub.onrender.com/subscription.php?cancel=1",
         'metadata'     => [
             'user_id' => $user_id,
             'tier'    => $tier,
