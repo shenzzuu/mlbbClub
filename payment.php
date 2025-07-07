@@ -1,7 +1,7 @@
 <?php
 session_start();
 require 'db.php';                                 
-require_once 'stripe-php-master/init.php';          
+require_once __DIR__ . '/vendor/autoload.php';         
 
 if (!isset($_SESSION['username']))        exit('User not logged in.');
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') exit('Invalid request.');
