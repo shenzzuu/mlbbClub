@@ -112,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <label for="status">Status:</label>
       <select name="status" id="status">
         <option value="pending"   <?= $order['status'] === 'pending' ? 'selected' : '' ?>>Pending</option>
-        <option value="completed" <?= $order['status'] === 'completed' ? 'selected' : '' ?>>Completed</option>
+        <option value="completed" <?= $order['status'] === 'paid' ? 'selected' : '' ?>>Completed</option>
         <option value="cancelled" <?= $order['status'] === 'cancelled' ? 'selected' : '' ?>>Cancelled</option>
       </select>
       <button type="submit">Update</button>
