@@ -1,0 +1,180 @@
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 40px;
+}
+
+.section {
+    padding: 40px 0;
+    border-bottom: 1px solid #222;
+}
+
+.section h2 {
+    color: #ff4655;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+iframe {
+    border: 2px solid #ff4655;
+    border-radius: 10px;
+}
+
+.news-item {
+    border-left: 4px solid #f05;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.news-item h3 {
+    color: #f05;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.news-item p {
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #f05;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #ff8aa3;
+}
+
+.locked {
+    background-color: #222;
+    color: #888;
+    padding: 15px;
+    border-left: 4px solid #555;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #ff4655;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.registration {
+    padding: 50px 20px;
+    border-top: #ff4655;
+    color: #ffffff;
+    text-align: center;
+}
+
+.registration h2 {
+    font-size: 2rem;
+    color: #ff4655;
+    margin-bottom: 30px;
+}
+
+.tourney-form {
+    background-color: #1a1f2e;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 70, 85, 0.4);
+    text-align: left;
+}
+
+.tourney-form label {
+    display: block;
+    font-weight: bold;
+    margin: 20px 0 8px;
+    color: #ddd;
+}
+
+.tourney-form input,
+.tourney-form select,
+.tourney-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ff4655;
+    background-color: #2b2f40;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.tourney-form textarea {
+    resize: vertical;
+}
+
+.tourney-form button {
+    display: inline-block;
+    margin-top: 25px;
+    background-color: #ff4655;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.tourney-form button:hover {
+    background-color: #ff2e40;
+}
+
+.locked {
+    font-style: italic;
+    color: #ccc;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-left: 5px solid #ff4655;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

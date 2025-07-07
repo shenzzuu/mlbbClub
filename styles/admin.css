@@ -1,0 +1,136 @@
+body.dashboard {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    padding-top: 700px;
+    justify-content: center;
+}
+.dashboard .dashboard-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100%;
+    padding: 2rem;
+}
+
+.dashboard-grid {
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dashboard .dashboard-section {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #ff4655;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 15px rgba(255, 70, 85, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow-x: auto;
+    flex: 0 0 calc(50% - 2rem);
+    box-sizing: border-box;
+    width: max-content;
+    min-width: 300px;
+}
+
+.dashboard .dashboard-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(255, 70, 85, 0.8);
+}
+
+.dashboard .dashboard-section h3 {
+    color: #ff4655;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 5px #ff4655, 0 0 10px #ff4655;
+}
+
+.dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    table-layout: auto;
+    min-width: 600px;
+}
+
+.dashboard th,
+.dashboard td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #ff4655;
+}
+
+.dashboard th {
+    background: #ff4655;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.dashboard .join-btn {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    text-shadow: 0 0 5px #fff;
+}
+
+.dashboard .join-btn:hover {
+    background-color: #e03e4e;
+    box-shadow: 0 0 15px #ff4655;
+}
+
+.dashboard form label {
+    display: block;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.dashboard form input,
+.dashboard form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ff4655;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.dashboard form input:focus,
+.dashboard form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px #ff4655;
+}
+
+.dashboard .actions a {
+    color: #ff4655;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+.dashboard .actions a:hover {
+    color: #e03e4e;
+    text-shadow: 0 0 10px #ff4655;
+}
+
+@media (max-width: 768px) {
+    .dashboard .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard .dashboard-section {
+        padding: 1rem;
+    }
+}
+
+.admin-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    font-size: 1.2rem; }

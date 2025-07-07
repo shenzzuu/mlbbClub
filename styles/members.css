@@ -1,0 +1,112 @@
+.user-tier {
+    background-color: #111;
+    color: #f05;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.1em;
+    border-bottom: 1px solid #333;
+    padding-top: 40px;
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
+    padding: 40px 20px;
+    color: #ffffff;
+}
+
+.members-intro {
+    color: #f0f0f0;
+    padding: 30px 300px 10px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.members-intro h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ff4655;
+}
+
+.members-intro p {
+    font-size: 1em;
+    color: #000000;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 10px;
+}
+
+.card .role {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card .bio,
+.card .email {
+    font-size: 13px;
+    margin: 5px 0;
+    color: #ccc;
+    text-align: justify;
+}
+
+.social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
+.details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+.card.expanded .details {
+    max-height: 200px;
+    opacity: 1;
+}
+
+.page-content{
+    flex: 1;
+}

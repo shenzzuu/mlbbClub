@@ -1,0 +1,132 @@
+.current-tier {
+    background: #111;
+    padding: 20px;
+    border-top: 1px solid #222;
+    width: 100%;
+    text-align: center;
+    color: #f0f0f0;
+    margin: 0;
+    border-radius: 0;
+}
+
+.current-tier h2 {
+    margin: 10px 0 10px;
+    color: #ff4655;
+}
+
+.tier-intro {
+    max-width: 70%;
+    margin: 20px auto;
+    text-align: justify;
+    color: #000000;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plan {
+    background: #222;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 10px #000;
+    transition: transform 0.2s ease;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan h3 {
+    color: #f05;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.subscribe-btn {
+    background: #f05;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.subscribe-btn:hover {
+    background: #c03;
+}
+
+h1 {
+    color: #ff4655;
+    font-size: 2em;
+    text-align: left;
+    margin: 40px auto 10px;
+    max-width: 1000px;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.history {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.history-intro {
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    text-align: left;
+    color: #000000;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    text-align: center;
+}
+
+th {
+    color: #ffffff;
+    background-color: #f05;
+}
+
+.expired {
+    color: gray;
+}
+
+.active {
+    color: lightgreen;
+}
+
+.page-content {
+    flex: 1;
+}

@@ -1,0 +1,49 @@
+.about-section {
+    width: 100%;
+    padding: 60px 10%;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.about-section:nth-child(even) {
+    background-color: #e2e2e2;
+}
+
+.about-section h1,
+.about-section h2 {
+    color: #ff4655;
+    margin-bottom: 20px;
+}
+
+.about-section p,
+.about-section li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.about-section ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+}
+
+.mission-vision {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.mission-vision .mission,
+.mission-vision .vision {
+    flex: 1 1 45%;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 40px 5%;
+    }
+
+    .mission-vision {
+        flex-direction: column;
+    }
+}
