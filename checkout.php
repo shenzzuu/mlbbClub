@@ -44,8 +44,8 @@ try {
         'payment_method_types' => ['card'],
         'line_items'           => $line_items,
         'mode'                 => 'payment',
-        'success_url' => "https://your-app-name.onrender.com/success.php?session_id={CHECKOUT_SESSION_ID}",
-        'cancel_url'  => "https://your-app-name.onrender.com/merchandise.php?cancel=1",
+        'success_url' => "https://mlbbclub.onrender.com/success.php?session_id={CHECKOUT_SESSION_ID}",
+        'cancel_url'  => "https://mlbbclub.onrender.com/merchandise.php?cancel=1",
         'metadata'             => [
             'user_id' => $user_id,
             'purpose' => 'order'
