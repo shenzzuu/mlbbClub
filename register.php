@@ -54,6 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <html>
 <head>
   <title>Register</title>
+    <link rel="icon" href="pictures/tab_icon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
     body{background:#0f1923;font-family:'Orbitron',sans-serif;color:#fff;display:flex;justify-content:center;align-items:center;height:100vh;margin:0;}
