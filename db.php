@@ -1,9 +1,9 @@
 <?php
-$host = 'aws-0-ap-southeast-1.pooler.supabase.com';
-$port = '5432';                                    
-$dbname = 'postgres';                              
-$username = 'postgres.ttoqwpjxkzsfunumarne';      
-$password = 'MLClub@@023';                        
+$host     = getenv('DB_HOST');
+$port     = getenv('DB_PORT');
+$dbname   = getenv('DB_NAME');
+$username = getenv('DB_USER');
+$password = getenv('DB_PASS');
 
 try {
     $pdo = new PDO("pgsql:host=$host;port=$port;dbname=$dbname", $username, $password);
