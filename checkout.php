@@ -1,7 +1,7 @@
 <?php
 session_start();
 require 'db.php';                           // ← your PDO connection
-require_once 'stripe-php-master/init.php';  // Stripe SDK
+require_once __DIR__ . '/vendor/autoload.php';
 
 /* ───────────── 0. Guard checks ─────────────── */
 if (!isset($_SESSION['username'])) {
