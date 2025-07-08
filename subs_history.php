@@ -7,14 +7,11 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 
-/* ── Get user ID ───────────────────────────── */
 $stmt = $pdo->prepare("SELECT id FROM users WHERE username = ?");
 $stmt->execute([$_SESSION['username']]);
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
 if (!$user) exit('User not found.');
 $user_id = $user['id'];
-
-/* ── Auto-expire outdated subscriptions ────── */
 $today = date('Y-m-d');
 
 $pdo->prepare("
