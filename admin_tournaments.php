@@ -1,15 +1,12 @@
 <?php
-/* ─────────── admin_tournaments.php ─────────── */
 session_start();
-require 'db.php'; // ← PDO
+require 'db.php';
 
-/* ── auth guard ─────────────────────────────── */
 if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'admin') {
     header('Location: login.php');
     exit();
 }
 
-/* ── pull registrations (newest first) ──────── */
 $regs = $pdo->query("
     SELECT r.*, u.username
     FROM   tournament_registrations r
