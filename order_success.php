@@ -1,8 +1,7 @@
 <?php
 session_start();
-require 'db.php';                       // ← your PDO connection
+require 'db.php';
 
-/* ───────── 0. Basic guards ───────── */
 if (!isset($_SESSION['username'])) {
     header('Location: login.php'); exit();
 }
@@ -16,23 +15,19 @@ if (empty($cart)) {
     header('Location: index.php'); exit();
 }
 
-/* ───────── 1. Fetch user row ─────── */
 $stmt = $pdo->prepare("SELECT id FROM users WHERE username = ?");
 $stmt->execute([$_SESSION['username']]);
 $user = $stmt->fetch(PDO::FETCH_ASSOC);
 if (!$user) exit('User not found.');
 $user_id = $user['id'];
 
-/* ───────── 2. Calculate order total ─ */
 $total = 0;
 foreach ($cart as $c) {
     $total += $c['price'] * $c['qty'];
 }
 
-/* ───────── 3. DB transaction ─────── */
 $pdo->beginTransaction();
 try {
-    /* 3a. create order */
     $orderStmt = $pdo->prepare("
         INSERT INTO orders (user_id, total, status, created_at)
         VALUES (?, ?, 'paid', NOW())
@@ -40,8 +35,6 @@ try {
     ");
     $orderStmt->execute([$user_id, $total]);
     $order_id = $orderStmt->fetchColumn();
-
-    /* 3b. insert order_items & update stock */
     $itemStmt  = $pdo->prepare("
         INSERT INTO order_items (order_id, product_id, quantity, price)
         VALUES (?, ?, ?, ?)
@@ -57,8 +50,6 @@ try {
                             $item['price']]);
         $stockStmt->execute([$item['qty'], $item['id']]);
     }
-
-    /* 3c. mark payment row as PAID */
     $payUpd = $pdo->prepare("
         UPDATE payments
            SET status    = 'paid',
@@ -74,8 +65,6 @@ try {
     ]);
 
     $pdo->commit();
-
-    /* 3d. clear cart */
     unset($_SESSION['cart']);
     $_SESSION['checkout_success'] = true;
 
