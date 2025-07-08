@@ -47,7 +47,6 @@ function addStaff(){
   ['newName','newRole','newEmail','newImg'].forEach(id=>document.getElementById(id).value='');
 }
 
-// ------------ Close modals on outside click ------------
 window.onclick = e=>{
   if(e.target.id==='editModal') document.getElementById('editModal').style.display='none';
   if(e.target.id==='addModal')  document.getElementById('addModal').style.display='none';
