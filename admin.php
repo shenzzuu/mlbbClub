@@ -43,7 +43,7 @@ $memberships = $pdo->query("SELECT * FROM memberships ORDER BY id DESC")
   <div class="admin-text">Welcome, <?= htmlspecialchars($_SESSION['username']) ?></div>
 </header>
 
-<div class="dashboard-grid">
+<div class="dashboard-grid"><br><br><br>
 
   <!-- USERS -->
   <div class="dashboard-section">
