@@ -71,7 +71,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <a href="https://en.moonton.com/news/217.html" target="_blank" class="card-link">
       <div class="card">
         <img src="pictures/pic1.png" alt="Latest News 1">
-        <h3>Mobile Legends: Bang Bang roars to life as ALLSTAR 2025 goes live with prehistoric battlefield overhaul!</h3>
+        <h3>ALLSTAR 2025 Goes Live With Prehistoric Battlefield Update!</h3>
         <p>ALLSTAR 2025 is now live as Mobile Legends: Bang Bang (MLBB) debuts it most dramatic map 
           transformation yet! Roar to life in the new dinosaur-mechanical world, where the battlefield 
           bursts with ancient visuals and thunderous audio. 
@@ -82,7 +82,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <a href="https://en.moonton.com/news/211.html" target="_blank" class="card-link">
       <div class="card">
         <img src="pictures/pic2.png" alt="Latest News 2">
-        <h3>Mobile Legends: Bang Bang Women's Invitational trailblazes women's esports</h3>
+        <h3>Mobile Legends Women's Invitational Boosts Women's Esports Scene</h3>
         <p>The Mobile Legends: Bang Bang (MLBB) Women's Invitational (MWI) is set to return at the 
           2025 Esports World Cup (EWC) as the largest women's tournament at the world's biggest multi-title esports event!
         </p>
@@ -92,7 +92,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <a href="https://en.moonton.com/news/209.html" target="_blank" class="card-link">
       <div class="card">
         <img src="pictures/pic3.jpg" alt="Featured Content">
-        <h3>The Myth Reforged—The Phoenix Empress, Wu Zetian, Arrives to Mobile Legends: Bang Bang</h3>
+        <h3>The Phoenix Empress Wu Zetian Arrives in MLBB</h3>
         <p>Mobile Legends: Bang Bang (MLBB) unveils its newest hero: Wu Zetian, the reborn phoenix empress whose legend 
           spans millennia. Launching on 18 June, Zetian brings a unique blend of high-impact spellcasting and utility to the Land of Dawn.
         </p>
